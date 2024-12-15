@@ -1,5 +1,7 @@
 // Bro Code Youtube Video
+
 fetchData()
+
 
     async function fetchData() {
         const pokemonName = document.getElementById('pokemonName').value.toLowerCase();
@@ -9,6 +11,8 @@ fetchData()
         let pokemonSprite = document.getElementById('pokemonSprite');
         pokemonSprite = data.sprites.front_default;
         const imgElement = document.getElementById("pokemonSprite");
+        let pokeName = document.getElementById('pokeName');
+        pokeName.innerText = data.species.name.toUpperCase();
         
         imgElement.src = pokemonSprite;
         imgElement.style.display = "block";

@@ -17,13 +17,125 @@ body {
 .container {
     width: 1000px;
     height: 800px;
-    border: 1px solid black;
     margin: 0;
     padding: 0;
+    border: 1px solid rgb(61, 61, 198);
 }
 
 .top {
     color: white;
     background-color: rgb(61, 61, 198);
     padding: 1rem;
+    margin: 0;
+}
+
+.grid-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* height: 720px; */
+}
+
+.bottom {
+    color: white;
+    background-color: rgb(61, 61, 198);
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom input, button {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.left-side {
+    background-color: rgb(170, 198, 170);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.name-level {
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.pokeName {
+    background-color: rgb(255, 199, 58);
+    color: white;
+    padding: 1rem;
+    margin: 0;
+}
+
+.pokeLevel {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    margin: 0;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.pokemonImage {
+    height: 300px;
+    width: 300px;
+    margin: 2rem;
+    align-items: center;
+    background-color: rgb(229, 229, 152);
+}
+
+#pokemonSprite {
+    height: 300px;
+    position: fixed;
+}
+
+.itemSection {
+    height: fit-content;
+}
+
+.item {
+    background-color: rgb(255, 199, 58);
+    color: white;
+    padding: 1rem;
+    margin: 0;
+}
+
+.itemNone {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    margin: 0;
+}
+
+.right-side {
+    background-color: rgb(170, 198, 170);
+    display: flex;
+    justify-content: center;
+}
+
+.options-buttons {
+    font-size: 0;
+}
+
+.options-buttons button {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+}
+
+.options-buttons i {
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    padding: 0;
 }
