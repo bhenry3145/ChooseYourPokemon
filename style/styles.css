@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Press-Start;
+    src: url('../assets/fonts/PressStart2P-Regular.ttf');
+}
+
+body {
+    font-family: Press-Start;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1000px;
+    height: 800px;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    color: white;
+    background-color: rgb(61, 61, 198);
+    padding: 1rem;
+}
