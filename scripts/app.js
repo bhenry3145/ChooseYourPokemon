@@ -1,6 +1,12 @@
 // Bro Code Youtube Video
 
-fetchData()
+let hpDisplay = document.getElementById('hpDisplay');
+let hpBar = document.getElementById('hpBar');
+let attackDisplay = document.getElementById('attackDisplay');
+let defenseDisplay = document.getElementById('defenseDisplay');
+let specialatkDisplay = document.getElementById('specialatkDisplay');
+let specialdefDisplay = document.getElementById('specialdefDisplay');
+let speedDisplay = document.getElementById('speedDisplay');
 
 
     async function fetchData() {
@@ -16,11 +22,17 @@ fetchData()
         
         imgElement.src = pokemonSprite;
         imgElement.style.display = "block";
+
+        hpDisplay.innerText = data.stats[0].base_stat;
+        attackDisplay.innerText = data.stats[1].base_stat;
+        defenseDisplay.innerText = data.stats[2].base_stat;
+        specialatkDisplay.innerText = data.stats[3].base_stat;
+        specialdefDisplay.innerText = data.stats[4].base_stat;
+        speedDisplay.innerText = data.stats[5].base_stat;
     }
 
     let fetchButton = document.getElementById('fetchButton');
 
     fetchButton.addEventListener('click', () => {
         fetchData();
-
     })

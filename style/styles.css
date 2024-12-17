@@ -119,10 +119,12 @@ body {
     background-color: rgb(170, 198, 170);
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .options-buttons {
-    font-size: 0;
+    height: fit-content;
+    width: fit-content;
 }
 
 .options-buttons button {
@@ -131,6 +133,7 @@ body {
     padding: 0;
     height: 50px;
     width: 50px;
+    font-size: 0;
 }
 
 .options-buttons i {
@@ -138,4 +141,56 @@ body {
     width: 50px;
     margin: 0;
     padding: 0;
+}
+
+.right-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.lightBg {
+    background-color: rgb(174, 139, 226);
+    margin: 0;
+    padding: 1rem;
+}
+
+
+.darkBg {
+    background-color: rgb(138, 94, 204);
+    margin: 0;
+    padding: 1rem;
+}
+
+.whiteBg {
+    background-color: white;
+    margin: 0;
+    padding: 1rem;
+}
+
+.hpBar {
+    margin: 0;
+    padding: 1rem;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: red;
+    background-color: rgb(138, 94, 204);
+
+}
+
+
+.yellowBg {
+    background-color: rgb(173, 173, 64);
+    margin: 0;
+    padding: 1rem;
+}
+
+.hpBtn {
+    width: 200px;
+    height: 1px;
+    background-color: rgb(40, 216, 40);
+    border-radius: 0;
+    border: 4px solid black;
+    margin: 0;
 }
